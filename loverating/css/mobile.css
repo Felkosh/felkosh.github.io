@@ -1,0 +1,187 @@
+@media (min-width: 980px) {
+		.sub__link:hover .sub__menu {
+			display: block;		
+		}
+
+	}
+
+@media (max-width: 979px) {
+	.wrap {
+		width: 320px;
+	}
+	.wrap__padding {
+		padding: 20px 10px;
+	}
+	.padding__left__right__wrap {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.menu__wrap {
+		display: block;
+	}
+	.menu {
+		display: none;
+	}
+	.menu > li {
+		display: block;
+	}
+	.menu > li > a {
+	}
+	.gamb {
+		display: block;
+		position: absolute;
+		top: 5px;
+		right: 5px;
+	}
+	.sub__menu {
+		position: relative;
+		top: 0px;
+	}
+	.main__sites__site {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.main__sites__logo {
+		display: inline-block;
+
+	}
+	.main__sites__logo img {
+		display: block;
+		width: 100%;
+		height: auto;
+	}
+	.best {
+		z-index: 5;
+	}
+	.main__sites__content {
+		padding-left: 0px;
+		padding-top: 10px;
+	}
+	.main__content__banner {
+		display: none;
+	}
+	.main__content__text {
+		padding-right: 0px;
+	}
+	.main__content {
+		display: block;
+	}
+	.ed__img__margin {
+		width: 100%;
+		height: auto;
+		display: block;
+	}
+	/* fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff  */
+.rtable {
+  /*!
+  // IE needs inline-block to position scrolling shadows otherwise use:
+  // display: block;
+  // max-width: min-content;
+  */
+  display: inline-block;
+  vertical-align: top;
+  max-width: 100%;
+  
+  overflow-x: auto;
+  
+  // optional - looks better for small cell values
+  white-space: nowrap;
+
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.rtable,
+.rtable--flip tbody {
+  // optional - enable iOS momentum scrolling
+  -webkit-overflow-scrolling: touch;
+  
+  // scrolling shadows
+  background: radial-gradient(left, ellipse, rgba(0,0,0, .2) 0%, rgba(0,0,0, 0) 75%) 0 center,
+              radial-gradient(right, ellipse, rgba(0,0,0, .2) 0%, rgba(0,0,0, 0) 75%) 100% center;
+  background-size: 10px 100%, 10px 100%;
+  background-attachment: scroll, scroll;
+  background-repeat: no-repeat;
+}
+
+// change these gradients from white to your background colour if it differs
+// gradient on the first cells to hide the left shadow
+.rtable td:first-child,
+.rtable--flip tbody tr:first-child {
+  background-image: linear-gradient(to right, rgba(255,255,255, 1) 50%, rgba(255,255,255, 0) 100%);
+  background-repeat: no-repeat;
+  background-size: 20px 100%;
+}
+
+// gradient on the last cells to hide the right shadow
+.rtable td:last-child,
+.rtable--flip tbody tr:last-child {
+  background-image: linear-gradient(to left, rgba(255,255,255, 1) 50%, rgba(255,255,255, 0) 100%);
+  background-repeat: no-repeat;
+  background-position: 100% 0;
+  background-size: 20px 100%;
+}
+
+.rtable th {
+  font-size: 11px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.rtable th,
+.rtable td {
+  padding: 6px 12px;
+  border: 1px solid #d9d7ce;
+}
+
+.rtable--flip {
+  display: flex;
+  overflow: hidden;
+  background: none;
+}
+
+.rtable--flip thead {
+  display: flex;
+  flex-shrink: 0;
+  min-width: min-content;
+}
+
+.rtable--flip tbody {
+  display: flex;
+  position: relative;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.rtable--flip tr {
+  display: flex;
+  flex-direction: column;
+  min-width: min-content;
+  flex-shrink: 0;
+}
+
+.rtable--flip td,
+.rtable--flip th {
+  display: block;
+}
+
+.rtable--flip td {
+  background-image: none !important;
+  // border-collapse is no longer active
+  border-left: 0;
+}
+
+// border-collapse is no longer active
+.rtable--flip th:not(:last-child),
+.rtable--flip td:not(:last-child) {
+  border-bottom: 0;
+}
+
+	.tabel__wrap {
+		width: 300px;
+	}
+	.main__table thead th {
+		padding-top: 9px;
+		padding-bottom: 9px; 
+	}
+}

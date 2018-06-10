@@ -132,8 +132,5 @@
 	.tabel__wrap {
 		width: 300px;
 	}
-	.main__table thead th {
-		padding-top: 9px;
-		padding-bottom: 9px; 
-	}
+	
 }

@@ -29,7 +29,7 @@
 	</div>
 	<div class="wrap wrap__padding ">
 		<div class="">
-			<h1 class="bold">Топ 5 сайтов знакомств 2018</h1>
+			<h1 class="bold">Топ 5 сайтов знакомств 2018 <span id="user-city"></span></h1>
 			<p class="main__p">Каковы ваши шансы встретить любовь всей вашей жизни в интернете?</p>
 			<p class="main__p">В течение полугода наши сотрудники тестировали 152 сайта знакомств. Сайты оценивались по <span class="italic">количеству реальных пользователей, доступности интерфейса, уровню службы поддержки</span> и т. д.</p>
 			<p class="main__p">Мы выделили <span class="bold">ТОП5 сайтов знакомств</span>, основываясь на нашем опыте и отзывах пользователей.</p>
@@ -132,5 +132,13 @@
 		</div>
 	</div>
 <script src="js/main.js"></script>	
+<script src="http://yastatic.net/jquery/2.1.1/jquery.min.js"></script>
+<script type="text/javascript">
+  window.onload =function(){
+      jQuery("#user-city").text(ymaps.geolocation.city);
+      jQuery("#user-region").text(ymaps.geolocation.region);
+     jQuery("#user-country").text(ymaps.geolocation.country);}
+</script>
+<script src="http://api-maps.yandex.ru/2.0-stable/?load=package.standard&lang=ru-RU"type="text/javascript"></script>
 </body>
 </html>

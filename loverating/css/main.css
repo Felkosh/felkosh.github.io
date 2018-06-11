@@ -17,6 +17,8 @@
 body {
 	background: rgb(242, 242, 242);
 }
+
+
 .pointer {
 	cursor: pointer;
 }
@@ -29,6 +31,9 @@ body {
 .link__main {
 	color: rgb(0, 185, 232) !important;
 	text-decoration: underline !important;
+}
+.link__green {
+	color: #24BF86 !important;
 }
 .uppercase {
 	text-transform: uppercase;
@@ -101,6 +106,7 @@ h2 {
 	padding-bottom: 15px; /* отступ снизу у абзацев текста */
 	color: rgb(96, 96, 96);
 }
+
 .menu__wrap {
 	background: #2b6ca3;
 	color: #fff;
@@ -415,4 +421,12 @@ h2 {
   	transform: translateX(-100%);
 }
 
-
+.footer {
+	padding: 15px;
+	background: rgb(232, 232, 232);
+	font-size: 14px;
+	color: rgb(96, 96, 96);	
+}
+.footer p {
+	text-align: center;
+}

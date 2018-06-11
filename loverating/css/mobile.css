@@ -2,7 +2,9 @@
 		.sub__link:hover .sub__menu {
 			display: block;		
 		}
-
+		.hidden__lg {
+			display: none !important;
+		}
 	}
 
 @media (max-width: 979px) {
@@ -10,11 +12,18 @@
 		width: 320px;
 	}
 	.wrap__padding {
-		padding: 20px 10px;
+		padding: 10px 10px;
 	}
 	.padding__left__right__wrap {
 		padding-left: 10px;
 		padding-right: 10px;
+	}
+	h2.padding__top__bot__wrap {
+		padding-top: 0px;
+		padding-bottom: 10px;
+	}
+	.main__btn  {
+		width: 100%;
 	}
 	.menu__wrap {
 		display: block;
@@ -26,6 +35,9 @@
 		display: block;
 	}
 	.menu > li > a {
+	}
+	.hidden__sm {
+		display: none !important;
 	}
 	.gamb {
 		display: block;
@@ -43,7 +55,7 @@
 	}
 	.main__sites__logo {
 		display: inline-block;
-
+		width: 100%;
 	}
 	.main__sites__logo img {
 		display: block;
@@ -131,6 +143,22 @@
 
 	.tabel__wrap {
 		width: 300px;
+	}
+	.footer {
+		padding: 5px;
+	}
+	.menu > li > a {
+		text-align: left;
+		font-size: 24px;
+	}
+	.sub__menu li a {
+		font-size: 24px;
+		line-height: 58px;
+		height: 58px;
+		text-align: left;
+		font-family: OpenSansCond;
+		box-sizing: border-box;
+		padding-left: 100px;
 	}
 	
 }

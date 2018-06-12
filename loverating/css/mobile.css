@@ -42,14 +42,14 @@
 	.gamb {
 		display: block;
 		position: absolute;
-		top: 2px;
-		right: 2px;
-		width: 45px;
-		height: 45px;
+		top: 5px;
+		right: 15px;
+		width: 35px;
+		height: 35px;
 		background: #fff;
 		border-radius: 45px;
 	}
-	#nav-toggle span { position: absolute; left: 7px; top: 21px; }
+	#nav-toggle span { position: absolute; left: 7.5px; top: 16px;}
 
 	#nav-toggle span, 
 	#nav-toggle span:before,
@@ -58,17 +58,17 @@
 	  display: block;
 	  content: '';
 	  height: 3px;
-	  width: 30px;
+	  width: 20px;
 	  background: #000;
 	  border-radius: 1px;
 	  cursor: pointer;
 	  top: ;
 	}
 	#nav-toggle span:before {
-	  top: -8px;
+	  top: -6px;
 	}
 	#nav-toggle span:after {
-	  bottom: -8px; 
+	  bottom: -6px; 
 	}
 	/* Добавим анимацию всех свойств для блоков нашей иконки */
 	#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {

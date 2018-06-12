@@ -195,6 +195,7 @@ h2 {
 	.main__sites__logo img {
 		width: 165px;
 		height: auto;
+		display: block;
 	}
 	.main__sites__logo__white {
 		position: absolute;

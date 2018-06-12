@@ -18,7 +18,11 @@ body {
 	background: rgb(242, 242, 242);
 }
 
-
+.main__logo {
+	height: 34px;
+	width: auto;
+	padding: 5px 10px;
+}
 .pointer {
 	cursor: pointer;
 }

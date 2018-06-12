@@ -1,4 +1,6 @@
-
+$('#nav-toggle').click(function(){
+    $(this).toggleClass('activex');
+});
 
 
 
@@ -19,6 +21,7 @@ $(".main__content__banner").hover(
     $(".slide__in").click(
     	function() {
     		$("#menu").slideToggle(300);
+
     	}
     );
     $(".sub__link > a").on('click', function(e) {
@@ -27,5 +30,6 @@ $(".main__content__banner").hover(
     if(window.innerWidth < 980){
 		$(".sub__link > a").on('click', function() {
 			$(".sub__menu").slideToggle(300);
+            $('.sub__link > a').toggleClass('open__sub__menu');
 		});
 	};

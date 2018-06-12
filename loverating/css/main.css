@@ -192,6 +192,10 @@ h2 {
 		border: 5px solid rgba(255, 255, 255, 1);
 		box-shadow: 0.00px 1.00px 4px 0px rgba(0,0,0,0.4);
 	}
+	.main__sites__logo img {
+		width: 165px;
+		height: auto;
+	}
 	.main__sites__logo__white {
 		position: absolute;
 		height: 100%;
@@ -222,6 +226,10 @@ h2 {
 		position: absolute;
 		right: 0px;
 		top: -21px;
+	}
+	.best img {
+		width: 125px;
+		height: auto;
 	}
 	.main__sites__name {
 		font-size: 22px;

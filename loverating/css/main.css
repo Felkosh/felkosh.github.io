@@ -274,10 +274,13 @@ h2 {
 	width: 285px;
 	height: auto;
 	position: relative;
-	background: #000;
 	flex-shrink: 0;
 	margin-top: 20px;
 	display: block;
+	background: #000;
+}
+.main__content__banner__frame {
+	width: 300px;
 }
 .main__content__banner img{
 	width: 100%;

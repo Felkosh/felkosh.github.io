@@ -19,9 +19,9 @@ body {
 }
 
 .main__logo {
-	height: 34px;
+	height: 32px;
 	width: auto;
-	padding: 5px 10px;
+	padding: 10px 10px;
 }
 .pointer {
 	cursor: pointer;
@@ -162,7 +162,7 @@ h2 {
 	.sub__menu {
 		position: absolute;
 		width: 100%;
-		bottom: -109px;
+		bottom: -179px;
 		left: 0px;
 		padding-top: 10px;
 		display: none;
@@ -172,9 +172,9 @@ h2 {
 		display: block;
 		width: 100%;
 		text-align: center;
-		font-size: 10px;
-		line-height: 33px;
-		height: 33px;
+		font-size: 18px;
+		line-height: 58px;
+		height: 58px;
 		text-align: center;
 		background: #2b6ca3;
 		transition: 0.4s;

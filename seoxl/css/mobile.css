@@ -84,8 +84,18 @@
 	.bloglist-link {
 		width: 311px;
 		box-sizing: border-box;
-		margin: 20px auto 0;
+		margin:;
+	}
+	.bloglist-desc {
+		margin-bottom: 7.5px;
 	}
 	.bloglist-end-item {
 		flex-wrap: wrap;
+		margin: 0;
+	}
+	.bloglist-end-item a {
+		margin: 7.5px 0px;
+	}
+	.bloglist-meta_autor {
+		margin-right: 5px !important;
 	}

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>SeoXL</title>
+		<link href="css/reset.css" rel="stylesheet">
+		<link href="css/main.css" rel="stylesheet">
+		<link href="css/mobile.css" rel="stylesheet">
+		
+	</head>
+<body>
+	<div class="main">
+		<div class="wrap">
+			<H1>Блог</H1>
+			<div class="bloglist">
+				<div class="dropdown__wrap">
+					<div id="dd" class="wrapper-dropdown" tabindex="1">
+						<span class="dropdown__tittle">Авторы</span>
+						<div class="dropdown">
+							<span class="dropdown__tittle__active">Авторы</span>
+							<a href="#">Антон Чехов</a>
+							<a href="#">Федор Достоевский</a>
+							<a href="#">Лев Толстой</a>
+							<a href="#">Михаил Салтыков-Щедрин</a>
+						</div>
+					</div>
+					<div id="dd1" class="wrapper-dropdown" tabindex="1">
+						<span class="dropdown__tittle">Рубрики</span>
+						<div class="dropdown">
+							<span class="dropdown__tittle__active">Рубрики</span>
+							<a href="#">Веб-аналитика</a>
+							<a href="#">SMM в Facebook</a>
+							<a href="#">SMM в Instagramm</a>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="bloglist-img">
+						<img src="img/post__mini.jpg">
+					</div>
+					<div class="bloglist-content">
+						<div class="blogpost-meta">
+							<div class="blogpost-meta-view">5</div>
+							<div class="blogpost-meta-date">20.08.2018</div>
+							<div class="blogpost-meta-soc-wrap">
+								<div class="blogpost-meta-soc-title sm-hidden">
+									Поделиться
+								</div>
+								<div class="sm-show blogpost-meta-soc_toggle">
+									
+								</div>
+							</div>
+						</div>
+						<div class="bloglist-title">Дайджест новостей из мира интернет-маркетинга №73 от 20.08.2018 </div>
+						<div class="bloglist-desc">
+							Клименко уволен, Яндекс летит навстречу иностранным болельщикам и велосипедистам, мелкомягкие обновляют...
+						</div>
+						<div class="bloglist-end-item">
+							<a class="bloglist-meta_autor">Степан Митрофанов</a>
+							<a class="bloglist-link" href="#">Читать</a>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="bloglist-img">
+						<img src="img/post__mini.jpg">
+					</div>
+					<div class="bloglist-content">
+						<div class="blogpost-meta">
+							<div class="blogpost-meta-view">5</div>
+							<div class="blogpost-meta-date">20.08.2018</div>
+							<div class="blogpost-meta-soc-wrap">
+								<div class="blogpost-meta-soc-title sm-hidden">
+									Поделиться
+								</div>
+								<div class="sm-show blogpost-meta-soc_toggle">
+									
+								</div>
+							</div>
+						</div>
+						<div class="bloglist-title">Дайджест новостей из мира интернет-маркетинга №73 от 20.08.2018 </div>
+						<div class="bloglist-desc">
+							Клименко уволен, Яндекс летит навстречу иностранным болельщикам и велосипедистам, мелкомягкие обновляют...
+						</div>
+						<div class="bloglist-end-item">
+							<a class="bloglist-meta_autor">Степан Митрофанов</a>
+							<a class="bloglist-link" href="#">Читать</a>
+						</div>
+					</div>
+				</div>
+				<div class="pagenav">
+					<a class="pagenav-previous" href=""></a>
+					<a class="pagenav-first" href="#">1</a>
+					<a class="pagenav-dots" href="#">...</a>
+					<a href="#">43</a>
+					<span class="pagenav-current" href="#">44</span>
+					<a href="#">45</a>
+					<a class="pagenav-dots" href="#">...</a>
+					<a class="pagenav-last" href="#">545</a>
+					<a class="pagenav-next" href=""></a>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+		<script type="text/javascript">
+
+			function DropDown(el) {
+				this.dd = el;
+				this.initEvents();
+			}
+			DropDown.prototype = {
+				initEvents : function() {
+					var obj = this;
+
+					obj.dd.on('click', function(event){
+						$(this).toggleClass('active');
+						event.stopPropagation();
+					});	
+				}
+			}
+			$(function() {
+
+				var dd = new DropDown( $('#dd') );
+
+				$(document).click(function() {
+					// all dropdowns
+					$('.wrapper-dropdown').removeClass('active');
+				});
+
+			});
+
+			function DropDown1(el) {
+				this.dd1 = el;
+				this.initEvents();
+			}
+			DropDown1.prototype = {
+				initEvents : function() {
+					var obj = this;
+
+					obj.dd1.on('click', function(event){
+						$(this).toggleClass('active');
+						event.stopPropagation();
+					});	
+				}
+			}
+			
+			$(function() {
+
+				var dd1 = new DropDown( $('#dd1') );
+
+				$(document).click(function() {
+					// all dropdowns
+					$('.wrapper-dropdown').removeClass('active');
+				});
+
+			});
+
+		</script>
+</body>
+</html>

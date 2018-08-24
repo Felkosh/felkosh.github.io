@@ -1,0 +1,19 @@
+@font-face { 
+    font-family: "OpenSans";
+    src: url(../fonts/opensans.ttf);
+}
+@font-face { 
+    font-family: "OpenSansCond";
+    src: url(../fonts/opensanscondlight.ttf);
+}
+@font-face { 
+    font-family: "OpenSansBold";
+    src: url(../fonts/opensansbold.ttf);
+}
+@font-face { 
+    font-family: "OpenSansItalic";
+    src: url(../fonts/opensansitalic.ttf);
+}
+body {
+	background: rgb(242, 242, 242);
+}

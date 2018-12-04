@@ -106,12 +106,10 @@
 		padding-top: 23px;
 		padding-bottom: 25px;
 		background: url(../img/1__b.jpg) top center no-repeat;
-		background-size: auto 100%; 
+		background-size: 100% auto; 
 		position: relative;
 	}
-		.block__back__video__content {
-			display: none;
-		}
+		
 		.video__content__h1__margin {
 			margin: 0px 0px 20px;
 		}

@@ -267,6 +267,14 @@
 	.cases {
 
 	}
+		.prev__tab, .next__tab {
+			background-size: cover;		
+			width: 20px;
+			height: 30px;
+			top: 140px;
+			position: absolute;
+		}
+		
 		.cases > h1 {
 			padding: 25px 0px 15px;
 		}
@@ -357,6 +365,10 @@
 				width: 100% !important;
 				height: auto;
 			}
+
+			.solution__img.open_popup {
+				display: none !important;
+			}
 			.slider__text {
 				order: -1;
 				padding-left: 0px;
@@ -367,6 +379,12 @@
 			.slider__text ul {
 				width: auto;
 				padding: 0px 0px 15px 15px;
+			}
+			.slide .slider__text  {
+				height: 280px;
+			}
+			.slide__p__margin__sm {
+				margin-top: 15px;
 			}
 			.slider__text h2 {
 				padding: 0px;
@@ -473,7 +491,7 @@
 	}
 		#map {
 			width: 100%;
-			height: 56.25vh;
+			height: 56.25vw;
 			margin: 0px;
 		}
 		.location__contacts {
@@ -507,9 +525,7 @@
 			font-size: 13px;
 			line-height: 36px;
 		}
-		.footer .wrap p:last-child {
-			display: none;
-		}
+		
 
 /* Форма  */
 .form {
@@ -559,7 +575,7 @@
 		}
 		.form__flex {
 		}
-		.form .close {
+		.close__text {
 			border-bottom: 1px solid #c4c4c4;
 			width: 360px;
 			height: 40px;
@@ -588,7 +604,7 @@
 @media (max-height: 602px) {
 	.form {
 		max-height: 100vh;
-		overflow: scroll;
+		overflow-y: scroll;
 	}
 	.popup {
 		top: 0px;

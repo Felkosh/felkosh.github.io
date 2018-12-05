@@ -123,6 +123,9 @@ b {
 		position: relative;
 		overflow: hidden;
 	}
+		.block__back__video__content h1{
+			font-size: 46px;
+		}
 		.bgvideo {
 			position: absolute;
 			width: 100%;

@@ -110,7 +110,9 @@
 		background-size: 100% auto; 
 		position: relative;
 	}
-		
+		.block__back__video__content h1{
+			font-size: 18px;
+		}
 		.video__content__h1__margin {
 			margin: 0px 0px 20px;
 		}

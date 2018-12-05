@@ -126,6 +126,19 @@ b {
 		.block__back__video__content h1{
 			font-size: 46px;
 		}
+			.video-foreground {
+				position: absolute;
+				width: 100%;
+				height: 56.5vw;
+				top: 0px;
+			}
+			.block__back__video__content iframe {
+			 position: absolute;
+			 top: 0; left: 0;
+			 width: 100%; height: 100%;
+			 pointer-events: none;
+			}
+		
 		.bgvideo {
 			position: absolute;
 			width: 100%;

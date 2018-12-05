@@ -10,6 +10,7 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link rel="stylesheet" type="text/css" href="css/adaptive.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<script type="text/javascript" charset="utf-8" src="js/jquery.tubular.1.0.js"></script>
 	<script src="js/owl.carousel.min.js"></script>
 	<script type="text/javascript" src="js/tabs.js"></script>
 </head>
@@ -37,9 +38,8 @@
 			</div>
 		</div>
 		<div class="block__back__video__content">
-			<video autoplay loop muted class="bgvideo sm__hid" id="bgvideo">
-				<iframe src="https://www.youtube.com/embed/W0LHTWG-UmQ?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=W0LHTWG-UmQ" frameborder="0" allowfullscreen></iframe>
-			</video>
+		    
+			
 			<div class="wrap">
 				<h1 class="white__text video__content__h1__margin">Make product creation easier with new CATIA functionality</h1>
 				<h2 class="white__text video__content__h2__margin">
@@ -427,7 +427,7 @@
 		  	e.preventDefault();
 		});
 		$(document).ready(function(){
-			
+			$('#video__bg').tubular({videoId: 'ZCAnLxRvNNc'}); 
 			$('.owl-carousel').owlCarousel({
 				loop:true,
 				nav:true,

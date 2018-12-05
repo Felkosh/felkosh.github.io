@@ -1,0 +1,11 @@
+@import url(reset.css);
+
+p{
+ font-family: 'courgette';
+ color:#fff;
+ font-size: 80px;
+ text-align: center;
+ padding-top: 20%;
+ text-shadow: 0 1px 1px #000a33;
+    text-transform: uppercase;
+}

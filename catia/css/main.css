@@ -108,12 +108,12 @@ b {
 .block__back__video {
 }
 	.video__header {
-		height: 90px;
+		height: 80px;
 		background: #12486c;
 	}
 		.video__header h1 {
-			line-height: 90px;
-			font-size: 36px;
+			line-height: 80px;
+			font-size: 30px;
 		}
 	.block__back__video__content {
 		padding-top: 105px;

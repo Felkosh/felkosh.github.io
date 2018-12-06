@@ -469,6 +469,9 @@ b {
 			align-items: center;
 			height: 255px;
 		}
+		.cases__bottom__p b {
+			white-space: pre;
+		}
 	.cases__solution {
 		background: #ecebea;
 	}

@@ -1,0 +1,280 @@
+@media (max-width: 1000px) {
+	.wrap {
+		width: 360px;
+		padding-left: 16px;
+		padding-right: 16px;
+	}
+	.header {
+		box-sizing: border-box;
+		width: 100%;
+		padding: 5px 15px;
+	}
+	.active {
+
+	}
+	.menu {
+		position: fixed;
+		display: block;
+		width: auto;
+		top: 73px;
+		right: 0px;
+		bottom: 0px;
+		background: #fff;
+		z-index: 99;
+		padding-right: 16px;
+		box-sizing: border-box;
+		width: 200px;
+		height: 100%;
+		-webkit-transform: translateX(200px);
+		transform: translateX(200px);
+		transition: 1s;
+		z-index: 10201;
+	}
+
+	.menu.active {
+		display: block;
+		-webkit-transform: translateX(0px);
+		transform: translateX(0px);
+	}
+
+	
+	.menu a {
+		display: block;
+		padding: 5px 0px;
+		text-align: right;
+	}
+	.mobile_menu {
+		display: block;
+	}
+/*===============================================================Первый блок======================================================================================== */
+.know__how {
+	background: url(../img/video__b.jpg) top left no-repeat;
+	padding: 20px 16px;
+}
+.know__how h1 {
+	font-size: 45px;
+}
+
+.know__how p {
+	font-size: 14px;
+	padding-bottom: 30px;
+}
+.know__how .main__btn{
+	margin-bottom: 10px;
+}
+
+/*==========================================================Power-quest================================================================================================== */
+.power__quest {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+.power__quest p {
+	padding: 20px 0px;
+}
+.power__quest p br {
+	display: none;
+}
+/* ==========================================================Swiper================================================================================================================== */
+.special-us {
+
+}
+.special-us .wrap p {
+	padding-bottom: 30px;
+}
+.special-us .swiper-wrapper {
+	margin: 0px;
+}
+.special-us .swiper-slide {
+	transform: none;
+	transition: none;
+	height: 400px;
+}
+.special-us .swiper-slide .swiper-slide-card {
+	display: block;
+}
+.special-us .swiper-slide.swiper-slide-active .swiper-slide-card .swiper-slide-info {
+	transform: none;
+	transition: none;
+	position: relative;
+	top: -3px;
+	border-radius: 0px 0px 10px 10px;
+}
+.swiper-slide.swiper-slide-active img {
+	border-radius: 10px 10px 0px 0px;
+}
+.swiper__button__wrap {
+	display: none;
+}
+/* ================================================================Advantage================================================================================ */
+
+.advantage__flex {
+	flex-direction: column;
+}
+.advantage__flex {
+	display: block;
+	padding: 30px 0px 30px;
+}
+.advantage__flex__img, .advantage__flex__text {
+	width: 100%;
+	padding: 0 !important;
+}
+.advantage__flex__text h2 {
+	padding-top: 20px;
+}
+
+/* =============================================================Характеристики================================================================================================= */
+.property h1 {
+	line-height: 1em;
+	box-sizing: border-box;
+	padding-top: 10px;
+	width: 360px;
+	margin: 0 auto;
+}
+.property__wrap {
+	width: 360px;
+	box-sizing: border-box;
+	padding: 30px 16px;
+	height: auto;
+	background: none;
+}
+.property__box {
+	width: 100%;
+	height: auto;
+	padding-bottom: 50px;
+}
+.property__box h2 {
+	padding-top: 15px;
+}
+/* ==========================================================Video=============================================================================================== */
+
+.video {
+	width: 360px;
+	margin: 0 auto;
+	padding-left: 16px;
+	padding-right: 16px;
+	box-sizing: border-box;
+}
+.video h2 {
+	padding-bottom: 30px;
+}
+.video__wrap {
+	width: 100%;
+}
+.video h3 {
+	padding-top: 30px;
+}
+.video__ul {
+	display: block;
+	height: auto;
+	width: 100%;
+	box-sizing: border-box;
+}
+.video__ul li {
+	width: auto;
+}
+
+/* ====================================================================Service============================================================================================ */
+.service {
+	padding: 30px 0px;
+}
+.service br {
+	display: none;
+	padding-bottom: 15px;
+}
+.service h2 {
+	font-size: 20px;
+}
+.service ul {
+	font-size: 16px;
+}
+
+/* ===========================================================================About================================================================ */
+.about h1 {
+	width: 360px;
+	margin: 0 auto;
+	box-sizing: border-box;
+	line-height: 1em;
+	padding-top: 10px;
+}
+.about .wrap {
+	display: block;
+}
+.about__box {
+	width: 100%;
+	margin: 0px;
+}
+.about__img__wrap {
+	height: auto;
+}
+.about__box p {
+	padding-bottom: 50px;
+}
+/* ============================================================Clients============================================================================================== */
+.clients .wrap {
+	display: block;
+}
+.clients__box {
+	margin: 0px 0px 30px !important;
+	width: 100%;
+}
+.clients__box__text {
+	height: auto;
+	padding: 0px 16px 20px;
+}
+.swiper__logo {
+	padding: 30px 60px;
+}
+/* ===========================================================Form-block============================================================================================================= */
+.form__block {
+	padding-top: 30px;
+}
+.form__block .wrap {
+	width: 332px;
+	padding: 30px 10px;
+	border-width: 3px;
+}
+.form__block h2 {
+	font-size: 16px;
+}
+.form__block h2 br {
+	display: none;
+}
+.form__block h2 br.form__sm {
+	display: block;
+}
+.form__block__form__wrap {
+	height: auto;
+}
+.form__block__form__wrap {
+	padding-top: 30px;
+}
+.form__block p {
+	width: auto;
+	margin: 20px 0px;
+}
+.form__block .form__button {
+	width: 100%;
+}
+/* =====================================================Footer==================================================================================================== */
+
+.footer {
+	display: block;
+	width: 100%;
+	padding: 0px;
+}
+.footer__content__wrap {
+	width: 360px;
+	box-sizing: border-box;
+	margin: 0 auto;
+	padding: 40px 16px;
+}
+.map__wrap {
+	height: 300px;
+	width: 100%;
+	background-position: center center;
+	margin: 0 auto;
+}
+.sm__br {
+	display: block;
+}
+} 

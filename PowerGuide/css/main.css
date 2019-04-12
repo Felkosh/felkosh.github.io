@@ -313,7 +313,12 @@ h1 {
     width: 735px;
   }
   .menu a {
-    color: #000;  
+    color: #000;
+    transition: .5s;
+    
+  }
+  .menu a:hover {
+    opacity: 0.7;
   }
 /* =====================================================================================Know-how=========================================================================================== */
 .know__how {
@@ -925,17 +930,18 @@ br.form__sm {
 .menu-top-click {
   backface-visibility: hidden;
   top: 15px;
-  transform: rotate(50deg);
-  transition: 0.55s 0.5s;
+  transform: rotate(45deg);
+  transition: 0.5s;
 }
 .menu-middle-click {
   opacity: 0;
+  transition: 0s;
 }
 .menu-bottom-click {
   backface-visibility: hidden;
   top: 15px;
-  transform: rotate(-410deg);
-  transition: 0.55s 0.5s;
+  transform: rotate(-45deg);
+  transition: 0.5s;
 }
 .mobile_menu_overlay{
   display: none;

@@ -21,7 +21,8 @@
 	}
 	.menu {
 		position: fixed;
-		display: block;
+		display: ;
+		flex-direction: column;
 		width: auto;
 		top: 73px;
 		right: 0px;
@@ -30,25 +31,28 @@
 		z-index: 99;
 		padding-right: 16px;
 		box-sizing: border-box;
-		width: 200px;
+		width: 300px;
 		height: 100%;
-		-webkit-transform: translateX(200px);
-		transform: translateX(200px);
+		-webkit-transform: translateX(300px);
+		transform: translateX(300px);
 		transition: 1s;
 		z-index: 10201;
+		justify-content: flex-start;
 	}
 
 	.menu.active {
-		display: block;
+		display: flex;
 		-webkit-transform: translateX(0px);
 		transform: translateX(0px);
 	}
 
 	
 	.menu a {
-		display: block;
 		padding: 5px 0px;
 		text-align: right;
+		font-size: 24px;
+		display: inline-block;  
+    	margin: 10px 0px;
 	}
 	.mobile_menu {
 		display: block;

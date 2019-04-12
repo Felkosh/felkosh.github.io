@@ -1,5 +1,7 @@
 @media (max-width: 1000px) {
-
+	body {
+		min-width: 360px;
+	}
 	.wrap {
 		width: 360px;
 		padding-left: 16px;

@@ -80,6 +80,8 @@
 	          'click',
 	        function(event) {
 	        Menu.activateMenu(event);
+	        $('.menu').toggleClass('active');
+	    	$('.mobile_menu_overlay').fadeToggle();
 	        event.preventDefault();
 	      }
 	    );
@@ -88,6 +90,8 @@
 	          'click',
 	        function(event) {
 	        Menu.activateMenu(event);
+	        $('.menu').toggleClass('active');
+	    	$('.mobile_menu_overlay').fadeToggle();
 	        event.preventDefault();
 	      }
 	    );
@@ -96,7 +100,8 @@
 	          'click',
 	        function(event) {
 	        Menu.activateMenu(event);
-	        event.preventDefault();
+	        $('.menu').toggleClass('active');
+	    	$('.mobile_menu_overlay').fadeOut();
 	      }
 	    );
 	  },
@@ -105,20 +110,27 @@
 	    Menu.el.menuTop.toggleClass('menu-top-click');
 	    Menu.el.menuMiddle.toggleClass('menu-middle-click');
 	    Menu.el.menuBottom.toggleClass('menu-bottom-click'); 
-	    $('.menu').toggleClass('active');
-	    $('.mobile_menu_overlay').fadeToggle();
+	    
 	  }
 	};
 
 	Menu.init();
   });
 $(function() {
+	
+	$(".anchor").click(function(){
+                var _href = $(this).attr("href");
+                $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
+                return false;
+        });
+
 $('.swiper-dot.active').addClass('tick-tack');
 
 $(window).scroll(function() {
-	var scroll__flex = $(window).scrollTop() + $(window).height() -100;
+	var scroll__flex__btm = $(window).scrollTop() + $(window).height() -100;
+	var scroll__flex = $(window).scrollTop();
 	$('.advantage__flex__text').each(function() {
- 			if ($(this).offset().top < scroll__flex)
+ 			if ($(this).offset().top <= scroll__flex__btm && $(this).offset().top >= scroll__flex)
  				{
  					$(this).addClass('active');
  				}

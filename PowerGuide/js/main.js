@@ -126,19 +126,19 @@ $(function() {
 
 $('.swiper-dot.active').addClass('tick-tack');
 
-$(window).scroll(function() {
-	var scroll__flex__btm = $(window).scrollTop() + $(window).height() -100;
-	var scroll__flex = $(window).scrollTop();
-	$('.advantage__flex__text').each(function() {
- 			if ($(this).offset().top <= scroll__flex__btm && $(this).offset().top >= scroll__flex)
- 				{
- 					$(this).addClass('active');
- 				}
- 			else {
- 				$(this).removeClass('active');
- 			}
- 		});
-});
+// $(window).scroll(function() {
+// 	var scroll__flex__btm = $(window).scrollTop() + $(window).height() -100;
+// 	var scroll__flex = $(window).scrollTop();
+// 	$('.advantage__flex__text').each(function() {
+//  			if ($(this).offset().top <= scroll__flex__btm && $(this).offset().top >= scroll__flex)
+//  				{
+//  					$(this).addClass('active');
+//  				}
+//  			else {
+//  				$(this).removeClass('active');
+//  			}
+//  		});
+// });
 }); 
 // =============================================Scroll==========================================================================================
 // $(function() {

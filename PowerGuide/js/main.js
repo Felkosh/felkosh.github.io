@@ -1,9 +1,57 @@
  $(document).ready(function () {
- 	
+ // 	var GM = {
+ //    init: function () {
+ //        this.initMap();
+ //    },
 
 
+	// initMap: function () {
+	//         var coordinates = {lat: 55.752599, lng: 37.702343},
+	//             markerImage = 'img/marker.png',
+	//             zoom = 9,
 
+	//             map = new google.maps.Map(document.getElementById('map'), {
+	//                 center: coordinates,
+	//                 zoom: zoom,
+	//                 disableDefaultUI: true,
+	//                 scrollwheel: false
+	//             }),
 
+	//             infowindow = new google.maps.InfoWindow({
+	//             }),
+
+	//             marker = new google.maps.Marker({
+	//                 position: coordinates,
+	//                 map: map,
+	//                 animation: google.maps.Animation.BOUNCE,
+	//                 icon: markerImage
+	//             });
+
+	        
+	//     }
+	// };
+	// GM.init();
+	function initialize() {     
+		var myLatlng = new google.maps.LatLng(55.752599, 37.702343);
+		var myOptions = {
+			zoom: 9,
+			center: myLatlng
+		};
+		var contentString = '<div id="content">Тут всё то про что должно быть рассказано</div>';
+		var infowindow = new google.maps.InfoWindow({
+			content: contentString
+		});
+		var marker = new google.maps.Marker({
+			position: myLatlng,
+			map: map,
+			title: 'Uluru (Ayers Rock)'
+		});
+		google.maps.event.addListener(marker, 'click', function() {
+			infowindow.open(map,marker);
+		});
+		var map = new google.maps.Map(document.getElementById("map"), myOptions); 
+	};
+	initialize();
  	var swiper__logo = new Swiper('.swiper__logo', {
  		slidesPerView: 'auto',
       	spaceBetween: 25,
@@ -123,6 +171,7 @@ $(function() {
                 $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
                 return false;
         });
+
 
 $('.swiper-dot.active').addClass('tick-tack');
 

@@ -870,6 +870,7 @@ br.form__sm {
 }
 .map__wrap {
   width: 50%;
+  background: url(../img/footer/footer__map.png) bottom left;
   background-size: cover;
   height:;
 }

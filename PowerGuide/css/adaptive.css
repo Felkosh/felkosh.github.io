@@ -65,6 +65,9 @@
 .bgvideo {
 	display: none;
 }
+.video__back__wrap {
+	display: none;
+}
 .know__how h1 {
 	font-size: 45px;
 }

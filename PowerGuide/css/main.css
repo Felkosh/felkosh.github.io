@@ -388,10 +388,10 @@ h1 {
  }
  @media (min-width: 1900px) {
   .know__how h1 {
-    font-size: 144px;
+    font-size: 100px;
   }
   .know__how p {
-    font-size: 44px;
+    font-size: 32px;
   }
  }
  .know__how .main__btn {

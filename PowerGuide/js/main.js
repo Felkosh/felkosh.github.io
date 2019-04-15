@@ -1,6 +1,6 @@
  $(document).ready(function () {
  	var options_video = { videoId: 'ROYLZx-9uXA', start: 3 };
-	$('.know__how').tubular(options__video);
+	$('.know__how').tubular(options_video);
  	var swiper__logo = new Swiper('.swiper__logo', {
  		slidesPerView: 'auto',
       	spaceBetween: 25,

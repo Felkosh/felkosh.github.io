@@ -17,7 +17,25 @@
 </head>
 <body>
   <!-- Swiper -->
-
+<div class="overlay"></div>
+<div class="form__popup popup" id="popup1">
+    
+    <div class="form__block">
+    	<img class="close close__img" src="img/cancel.svg">
+		<div class="wrap">
+			<h2>Получите бесплатную консультацию у наших специалистов, <Br />оставив заявку. Мы свяжемся с вами<br class="form__sm" /> в ближайшее время.</h2>
+			<div class="form__block__form__wrap">
+		        <input type="text" name="name" placeholder="ФИО" required="">
+		        <input type="text" name="phone" placeholder="Телефон" required="">
+		        <input type="text" name="email" placeholder="Email" required="">
+		        <input type="text" name="company" placeholder="Компания" required="">
+		        <textarea name="message" placeholder="Сообщение"></textarea>
+			</div>
+			<p>Отправляя данную форму, вы подтверждаете, что ознакомились с согласием на обработку персональных данных и принимаете указанные условия.</p>
+			<input type="submit" class="form__button" value="Оставить заявку">
+		</div>
+	</div>
+  </div>
 <div class="header">
 		<img class="header__logo" src="img/logo_blue.svg">
 		<div class="menu">
@@ -47,7 +65,7 @@
 	<div class="know__how__content">
 		<h1>PowerGuide</h1>
 		<p>Узнайте, как ускорить процесс сборки <br />и повысить качество технического обслуживания с помощью <br />Интерактивных Электронных Технических Руководств нового уровня!</p>
-		<a class="main__btn anchor" href="#form">запросить стоимость</a>
+		<a class="main__btn open_popup" rel="popup1">запросить стоимость</a>
 		<a class="main__btn main__btn__grey" href="https://ietm.igatec.com:400/ietm08/Login" target="_blank">Попробовать демо-версию</a>
 	</div>
 </div>
@@ -60,15 +78,49 @@
 		<h1 class="h__back">Использование</h1>
 		<p>Рабочие команды могут быстро создавать и обновлять высококачественные графические материалы и разрабатывать следующие типы технической документации:</p>
 	</div>
-
+  <div class="used__box__wrap">
+  	<dir class="used__box">
+  		<img src="img/slide/manual__b.jpg">
+  		<div class="used__box__text">
+  			<h3>Руководства пользователя, руководства по&nbsp;техническому обслуживанию и&nbsp;ремонту</h3>
+      		<p>Преемственность данных помогает преступить к&nbsp;решению задач и&nbsp;принимать решения быстрее</p>
+  		</div>
+  	</dir>
+  	<dir class="used__box">
+  		<img src="img/slide/manual1__b.jpg">
+  		<div class="used__box__text">
+  			<h3>Производственные инструкции по&nbsp;сборке и&nbsp;монтажу </h3>
+      		<p>Интерактивная привязка 3D-модели, справочной информации и&nbsp;пошаговая анимация процесса ускоряет сборку сложных изделий</p>
+  		</div>
+  		
+  	</dir>
+  	<dir class="used__box">
+  		<img src="img/slide/system-ed__b.jpg">
+  		<div class="used__box__text">
+  			<h3>Системы обучения нового уровня</h3>
+  			<p>Максимально наглядное и&nbsp;вовлекающее в&nbsp;процесс обучения.</p>
+  		</div>
+  		
+  	</dir>
+  	<dir class="used__box">
+  		<img src="img/slide/el-catalog__b.jpg">
+  		<div class="used__box__text">
+  			<h3>Электронные каталоги&nbsp;&mdash; интерактивные спецификации и&nbsp;списки деталей</h3>
+      		<p>Справочная информация о&nbsp;технических особенностях эксплуатации изделия и&nbsp;полный комплект документации в&nbsp;интерактивном цифровом формате</p>
+  		</div>
+  	</dir>
+  	
+  	
+  	
+  </div>
   <div class="swiper-container">
     <div class="swiper-wrapper">
     	<div class="swiper-slide">
     		<figure class="swiper-slide-card">
     			<img src="img/slide/el-catalog.jpg">
     			<figcaption class="swiper-slide-info">
-				<h3>Системы обучения <br />нового уровня</h3>
-      			<p>Максимально наглядное <br/>и вовлекающее в процесс <br />обучения.</p>
+				<h3>Электронные каталоги&nbsp;&mdash; интерактивные спецификации и&nbsp;списки деталей</h3>
+      			<p>Справочная информация о&nbsp;технических особенностях эксплуатации изделия и&nbsp;полный комплект документации в&nbsp;интерактивном цифровом формате</p>
 				</figcaption>
 			</figure>
     	</div>
@@ -85,8 +137,8 @@
     		<figure class="swiper-slide-card">
     			<img src="img/slide/manual1.jpg">
     			<figcaption class="swiper-slide-info">
-				<h3>Системы обучения <br />нового уровня</h3>
-      			<p>Максимально наглядное <br/>и вовлекающее в процесс <br />обучения.</p>
+				<h3>Производственные инструкции по&nbsp;сборке и&nbsp;монтажу </h3>
+      			<p>Интерактивная привязка 3D-модели, справочной информации и&nbsp;пошаговая анимация процесса ускоряет сборку сложных изделий</p>
 				</figcaption>
 			</figure>
     	</div>
@@ -94,8 +146,8 @@
     		<figure class="swiper-slide-card">
     			<img src="img/slide/manual.jpg">
     			<figcaption class="swiper-slide-info">
-				<h3>Системы обучения <br />нового уровня</h3>
-      			<p>Максимально наглядное <br/>и вовлекающее в процесс <br />обучения.</p>
+				<h3>Руководства пользователя, руководства по&nbsp;техническому обслуживанию и&nbsp;ремонту</h3>
+      			<p>Преемственность данных помогает преступить к&nbsp;решению задач и&nbsp;принимать решения быстрее</p>
 				</figcaption>
 			</figure>
     	</div>
@@ -323,7 +375,7 @@
 		</div>
 	</div>
 </div>
-<div id="form" class="form__block">
+<div class="form__block">
 	<div class="wrap">
 		<h2>Получите бесплатную консультацию у наших специалистов, <Br />оставив заявку. Мы свяжемся с вами<br class="form__sm" /> в ближайшее время.</h2>
 		<div class="form__block__form__wrap">

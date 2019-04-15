@@ -107,13 +107,19 @@
 .special-us .swiper-wrapper {
 	margin: 0px;
 }
+.used__box__wrap {
+	display: none;
+}
 .special-us .swiper-slide {
 	transform: none;
 	transition: none;
-	height: 400px;
+	height: 430px;
 }
 .special-us .swiper-slide .swiper-slide-card {
 	display: block;
+}
+.swiper-slide-card, .swiper-slide-info {
+	height: 220px;
 }
 .special-us .swiper-slide.swiper-slide-active .swiper-slide-card .swiper-slide-info {
 	transform: none;
@@ -312,4 +318,22 @@
 .sm__br {
 	display: block;
 }
+/* ======================================================================================================================================= */
+.popup {
+	margin-left: -180px;
+	top: 80px;
+	margin-top: 0px;
+}
+.close__img {
+  
+  top: 7px;
+  right: 7px;
+ 
+}
+.form__popup  {
+    max-height: 100vh;
+    box-sizing: border-box;
+    overflow-y: scroll;
+  }
+
 } 

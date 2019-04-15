@@ -91,6 +91,7 @@ h1 {
     color:#212b36;
     border-radius:0 0 10px 10px;
     padding-left: 30px;
+    padding-right: 30px;
 }
 .swiper-slide-active .swiper-slide-info {
   -webkit-box-shadow: 0px 0px 8px 0px rgba(23, 33, 19, 0.2);
@@ -326,6 +327,11 @@ h1 {
   padding: 180px 0px 260px;
   position: relative;
   overflow: hidden;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
 }
 /*.bgvideo {
       position: absolute;
@@ -394,6 +400,7 @@ h1 {
     text-transform: uppercase;
     border-radius: 15px;
     transition: .3s ease-in-out;
+    cursor: pointer;
  }
  a.main__btn:hover, .form__block .form__button:hover {
     background: #4d59a1;
@@ -448,6 +455,55 @@ h1 {
       padding-top: 25px;
       padding-bottom: 70px;
     }
+  .used__box__wrap {
+    display: flex;
+    padding: 0px;
+    justify-content: center;
+  }
+
+  .used__box {
+    width: 450px;
+    padding: 0px;
+    font-family: OpenSans;
+    margin: 0px 15px 0px;
+  }
+  @media (max-width: 1454px) {
+    .used__box__wrap {
+      flex-wrap: wrap;
+      width: 1200px;
+      margin: 0 auto;
+    }
+    .used__box {
+      margin-bottom: 30px;
+    }
+  }
+  .used__box__text {
+    background: #fff;
+    padding: 10px 20px 20px;
+    box-sizing: border-box;
+    -webkit-box-shadow: 0px 0px 8px 0px rgba(23,33,19,0.2);
+    -moz-box-shadow: 0px 0px 8px 0px rgba(23,33,19,0.2);
+    box-shadow: 0px 0px 8px 0px rgba(23,33,19,0.2);
+    height: 255px;
+    border-radius: 0px 0px 10px 10px;
+  }
+  .used__box img{
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+  }
+  .used__box h3{
+    font-weight: 600;
+    font-size: 22px;
+    color: #4d59a1;
+    padding: 15px 0px 10px;
+  }
+  .used__box p {
+    font-weight: 400;
+    font-size: 16px;
+    color: #494949;
+  }
   /*=======================================================================Преимущества======================================================================================================= */
   .advantage {
     padding-top: 55px;
@@ -1073,10 +1129,57 @@ br.form__sm {
   height: 100%;
 }
 
+/* =============================Popup Form============================= */
+.overlay {
+  display:none; 
+  position:fixed; 
+  z-index:999; 
+  background-color: rgba(0, 0, 0, 0.4);
+  top:0; 
+  right:0; 
+  left:0; 
+  bottom:0; 
+}
 
+.popup {
+  display:none; 
+  position:fixed; 
+  opacity: 0; 
+  top:50%; 
+  left:50%; 
+  z-index:1000;
+  margin: -305px 0px 0px -452.5px;
+}
 
+.form__popup .form__block {
+  padding: 0px;
+  position: relative;
+}
+.close__img {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 24px;
+  height: 24px;
+  opacity: 0.7;
+  cursor: pointer
+}
+.form__popup .form__block .wrap {
+  background: #fff;
+ 
+}
 
-
-
-
-
+@media (max-height: 647px) {
+  .form__popup  {
+    margin-top: 0px;
+    top: 0px;
+    max-height: 100vh;
+    box-sizing: border-box;
+    overflow-y: scroll;
+  }
+}
+@media (min-width: 1001px) {
+  .swiper-container {
+    display: none;
+  }
+}

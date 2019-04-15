@@ -137,6 +137,27 @@ $(window).scroll(function() {
  			}
  		});
 });
+$('.open_popup').click(function() {
+		var popup_id = $('#' + $(this).attr("rel"));
+		$(popup_id)
+			.css('display', 'block') // убирaем у мoдaльнoгo oкнa display: none;
+			.animate({opacity: 1}, 400); // плaвнo прибaвляем прoзрaчнoсть oднoвременнo сo съезжaнием вниз
+		$('.overlay').fadeIn(400, // снaчaлa плaвнo пoкaзывaем темную пoдлoжку
+			function(){ // пoсле выпoлнения предъидущей aнимaции
+						
+		});;
+	})
+	$('.popup .close, .overlay').click(function() {
+		$('.popup') 
+			.css('display', 'none') // убирaем у мoдaльнoгo oкнa display: none;
+			.animate({opacity: 0}, 400); // плaвнo прибaвляем прoзрaчнoсть oднoвременнo сo съезжaнием вниз
+				
+		$('.overlay').fadeOut(400, // снaчaлa плaвнo пoкaзывaем темную пoдлoжку
+			function(){ // пoсле выпoлнения предъидущей aнимaции
+						
+		});
+})
+
 }); 
 // =============================================Scroll==========================================================================================
 // $(function() {

@@ -327,13 +327,21 @@ h1 {
   position: relative;
   overflow: hidden;
 }
-.bgvideo {
+/*.bgvideo {
       position: absolute;
       width: 100%;
       height: auto;
       top: 0px;
       left: 0px;
       z-index: -1;
+}*/
+.video__back {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
 }
 .know__how__bg {
   position: absolute;

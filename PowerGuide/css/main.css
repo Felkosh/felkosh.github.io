@@ -335,7 +335,7 @@ h1 {
       left: 0px;
       z-index: -1;
 }*/
-.video__back {
+#video__back {
   position: absolute;
   width: 100%;
   height: auto;

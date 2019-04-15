@@ -38,6 +38,7 @@
 		transition: 1s;
 		z-index: 10201;
 		justify-content: flex-start;
+		align-items: flex-end;
 	}
 
 	.menu.active {

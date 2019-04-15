@@ -24,7 +24,7 @@
       },
       speed: 1000,
 			autoplay: {
-				delay: 8000,
+				delay: 3000,
 				waitForTransition: false,
 				disableOnInteraction: false
 			},

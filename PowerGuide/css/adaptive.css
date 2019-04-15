@@ -135,7 +135,10 @@
 	top: -205px;
 }
 /* ================================================================Advantage================================================================================ */
-
+.advantage .wrap {
+      padding-top: 5px;
+      width: 360px;
+    }
 .advantage__flex {
 	flex-direction: column;
 }
@@ -298,7 +301,7 @@
 	padding: 40px 16px;
 }
 .map__wrap {
-	height: 300px;
+	height: 400px;
 	width: 100%;
 	background-position: center center;
 	margin: 0 auto;

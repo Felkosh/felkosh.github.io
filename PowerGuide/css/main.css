@@ -705,7 +705,7 @@ background: linear-gradient(to bottom, #ffffff 0%,#ffffff 50%,#f5f5f5 51%,#f5f5f
 .video__ul {
   display: flex;
   flex-wrap: wrap;
-  height: 90px;
+  height: 80px;
   flex-direction: column;
   margin: 0 auto;
   width: 640px;
@@ -848,6 +848,9 @@ box-shadow: 0px 0px 8px 0px rgba(23,33,19,0.2);
   }
     .clients__box:first-child h2 {
       padding: 25px 0px 20px;
+    }
+    .clients__box:first-child h2.eng {
+      padding: 15px 0px 10px;
     }
   .clients__box:last-child {
     margin-left: 20px;

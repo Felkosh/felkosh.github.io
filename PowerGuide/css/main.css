@@ -337,6 +337,8 @@ h1 {
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
+  background: url(../img/video__b.jpg) top left no-repeat;
+  background-size: cover;
 }
 /*.bgvideo {
       position: absolute;

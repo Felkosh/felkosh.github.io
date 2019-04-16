@@ -354,11 +354,11 @@ h1 {
   height: 100%;
   top: 0px;
   left: 0px;
-  z-index: -1;
+  z-index: 1;
 }
 .know__how__bg {
   position: absolute;
-  z-index: 0;
+  z-index: 2;
   width: 100%;
   height: 100%;
   background: rgba(21, 21, 37, 0.6);
@@ -370,6 +370,7 @@ h1 {
     flex-wrap: wrap;
     justify-content: center;
     position: relative;
+    z-index: 3;
   }
  .know__how h1 {
   font-family: Raleway;

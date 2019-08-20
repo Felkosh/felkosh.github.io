@@ -8,9 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="fonts/fonts.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link rel="stylesheet" type="text/css" href="css/adaptive.css">
-	<script type="text/javascript" src="js/jq.js"></script>
-	<script src="js/jquery-svg-to-inline.min.js"></script>
-	<script type="text/javascript" src="js/main.js"></script>
+	
 
 </head>
 <body>
@@ -63,10 +61,24 @@
 				</h2>	
 				<div class="section">
 					<ul class="tabs">
+						<style>
+                .rammstein--stroke{
+                    fill-opacity: 0;
+                    stroke-width: 5px;
+                    stroke: red;
+                }
+
+                .metallica rect{
+                    fill-opacity: 0 !important;
+                }
+
+                .metallica path, .metallica polygon{
+                    fill: #fff !important;
+                }
+            </style>
 						<li class="current">
 							Грузовая газель
 							<object type="image/svg+xml" data="img/tabs/1.svg" class="svg rammstein--stroke"></object>
-							<img class="svg" src="img/tabs/1.svg">
 						</li>
 					    <li>Контейнер 8-12  м³</li>					        
 					    <li>Бункер 20-27 м³</li>
@@ -95,5 +107,8 @@
 				</div>
 			</div>
 		</div>
+<script type="text/javascript" src="js/jq.js"></script>
+	<script src="js/jquery-svg-to-inline.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>

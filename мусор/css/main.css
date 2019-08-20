@@ -1,0 +1,153 @@
+body {
+	font-family: 'Bliss Pro';
+	font-style: normal;
+}
+.wrap {
+	width: 960px;
+	box-sizing: border-box;
+	padding: 0px 10px;
+	margin: 0 auto;
+}
+/*Хедер*/
+	.header {
+		background: #6ba534;
+		padding: 15px 0px;
+		-webkit-box-shadow: 0px 6px 10px 0px rgba(27, 27, 31, 0.23);
+-moz-box-shadow:    0px 6px 10px 0px rgba(27, 27, 31, 0.23);
+box-shadow:         0px 6px 10px 0px rgba(27, 27, 31, 0.23);
+	}
+		.header .wrap {
+			display: flex;
+
+		}
+		.gerb {
+			width: 25px;
+			height: auto;
+			margin-right: 15px;
+		}
+		.header__p {
+			color: #fff;
+			font-size: 13px;
+			font-weight: 500;
+		}
+			.header__a {
+				background: #009be3;
+
+			}
+/*content*/
+.content {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	padding-top: 35px;
+}
+/*content left*/
+	.content__left__h1 {
+		font-size: 36px;
+		color: #009be3;
+		font-weight: 900;
+		text-align: center;
+		line-height: 1.1em;
+	}
+	.content__left__h3 {
+		font-size: 18px;
+		text-align: center;
+		color: #121212;
+		font-size: 18px;
+		font-weight: 500;
+	}
+	.content__left__trucks {
+		display: flex;
+		justify-content:  center;
+		width: 100%;
+		padding: 45px 0px 65px;
+	}
+		.content__left__trucks > div {
+			padding: 0px 15px;
+		}
+		.content__left__trucks > div img {
+			display: block;
+			margin: 0 auto;
+		}
+		.truck__price {
+			font-size: 12px;
+			font-weight: 800;
+			color: #121212;
+			text-align: center;
+			padding-bottom: 25px;
+			display: inline-block;
+		}
+		.truck__price:before {
+			width: 6px;
+			height: 6px;
+			display: inline-block;
+			background: #000 url(../img/dot.jpg) center center no-repeat;
+			content: "";
+			margin: 0 4px 0px 0px;
+			position: relative;
+			top: -1px; 
+		}
+			.truck__price span {
+				text-decoration: line-through;
+			}
+			.truck__price b {
+				color: #2695f0;
+				font-size: 14px;
+			}
+	.content__left__descr {
+		display: inline-block;
+	}
+		.content__left__descr p {
+			font-size: 14px;
+			color: #121212;
+			font-weight: 500;
+		}
+			.content__left__descr p span {
+				text-transform: uppercase;
+				color: #67a42f;
+			}
+			.content__left__descr a {
+				text-align: center;
+				margin-top: 15px;
+				display: block;
+				width: 97%;
+				padding: 2px 0px;
+				background: #009be3;
+				color: #fff;
+				font-weight: 900;
+				border-radius: 3px;
+			}
+				
+.content__right {
+
+}
+	.content__right__h2 {
+		font-size: 20px;
+		color: #565347;
+		padding-top: 5px;
+		font-weight: 900;
+		text-align: center;
+		text-transform: uppercase;
+	}
+/*---------------------------------------------------------------------------------------- */
+
+.svg path, .svg polygon{
+                    fill: #000 !important;
+                }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

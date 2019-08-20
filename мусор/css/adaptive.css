@@ -26,17 +26,23 @@
 		font-size: 12px;
 	}
 	.content__left__trucks {
-		display: block;
+		display: ;
+		flex-wrap: wrap;
+		align-items: flex-start;
 		padding: 0px;
+	}
+	.content__left__trucks > div:last-child {
+		order: -1;
+		margin: 45px 0px 22px;
 	}
 	.content__left__trucks > div {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
-		margin: 45px 0px;
+		margin: 22px 0px 45px;
 	}
 	.truck__price {
-		font-size: 10px;
+		font-size: 14px;
 		padding-bottom: 20px;
 	}
 	.truck__price b {
@@ -141,5 +147,107 @@
 	.content__left__descr p {
 		font-size: 13px;
 	}
+
+}
+@media (min-width: 1250px) {
+	.wrap {
+		width: 1250px;
+	}
+	.header__p {
+		font-size: 18px;
+	}
+	.gerb {
+		width: 40px;
+	}
+	.content__left__h1 {
+		font-size: 42px;
+	}
+	.content__left__h3 {
+		font-size: 24px;
+	}
+	.truck__price {
+		font-size: 16px;
+	}
+	.content__left__trucks > div {
+	    padding: 0px 25px;
+	}
+	.content__left__descr p {
+		font-size: 20px;
+	}
+	.content__left__descr a {
+
+	    padding: 5px 0px;
+	    font-size: 22px;
+	}
+
+	.content__right__h2 {
+		font-size: 30px;
+	}
+	.section {
+		width: 450px;
+		padding: 25px 15px 20px 30px;
+	}
+	.box__h2 {
+		font-size: 30px;
+	}
+	.box__svg {
+		height: 90px;
+	}
+	.box__h3 {
+		font-size: 24px;
+	}
+	.box__p {
+		font-size: 18px;
+	}
+
+			.tabs {
+				margin-left: -160px;
+				margin-top: -45px;
+				width: 120px;
+			}
+
+			.tabs li {
+				font-size: 14px;
+				padding: 10px 0px;
+			}
+			
+			.tab1 {
+				width: 80px;
+				height: 48px;
+			}
+			.tab2 {
+				width: 78px;
+				height: 42px;
+			}
+			.tab3 {
+				width: 116px;
+				height: 50px;
+			}
+			.tab5 {
+				width: 82px;
+				height: 44px;
+			}
+			.tab6 {
+				width: 74px;
+				height: 52px;
+			}
+
+
+			a.right__a {
+			    font-size: 24px;
+			    border-radius: 10px;
+			    padding: 12px 0px 10px;
+			    margin: 25px auto;
+			    text-align: center;
+			    width: 225px;
+
+			}
+
+			.right__descr {
+				font-size: 18px;
+			}
+
+
+
 
 }

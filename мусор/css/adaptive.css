@@ -1,0 +1,145 @@
+@media (max-width: 767px) {
+	.wrap {
+		width: 320px;
+		padding: 0 10px;
+	}
+	br.sm {
+		display: block;
+	}
+	.gerb {
+		width: 40px;
+		height: auto;
+		margin-right: 15px;
+		flex-shrink: 0;
+	}
+	.header__p {
+		font-size: 11px;
+	}
+	.content {
+		display: block;
+		padding-top: 50px;
+	}
+	.content__left__h1 {
+		font-size: 24px;
+	}
+	.content__left__h3 {
+		font-size: 12px;
+	}
+	.content__left__trucks {
+		display: block;
+		padding: 0px;
+	}
+	.content__left__trucks > div {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		margin: 45px 0px;
+	}
+	.truck__price {
+		font-size: 10px;
+		padding-bottom: 20px;
+	}
+	.truck__price b {
+		font-size: 12px;
+	}
+	.content__left__descr {
+		display: table;
+		margin: 0 auto;
+	}
+	.content__left__descr p {
+		font-size: 13px;
+	}
+	.content__left__descr p span {
+		display: block;
+	}
+		.content__left__descr a {
+				text-align: center;
+				margin-top: 15px;
+				display: block;
+				width: 240px;
+				padding: 2px 0px;
+				background: #009be3;
+				color: #fff;
+				font-weight: 900;
+				border-radius: 3px;
+			}
+	.content__right {
+		margin-top: 60px;
+		position: relative;
+	}
+	.content__right__h2 {
+		font-size: 16px;
+	}
+	.section {
+		margin-top: 100px;
+	}
+	.tabs {
+		float: none;
+		position: absolute;
+		margin: 0px;
+		top: 60px;
+		left: 0px;
+		width: 100%;
+		flex-wrap: nowrap;
+		justify-content: space-between;
+	}
+	.tabs li {
+		width: auto;
+		font-size: 7px;
+	}
+	.tabs li:last-child {
+		border-width: 1px;
+	}
+	.tabs__img__wrap {
+		height: 25px;
+	}
+	.tab1 {
+		width: 32px;
+	}
+	.tab2 {
+		width: 34px;
+	}
+	.tab3 {
+		width: 49px;
+	}
+	.tab5 {
+		width: 36px;
+	}
+	.tab6 {
+		width: 31px;
+	}
+	.right__descr br {
+		display: none;
+	}
+	.right__descr br.sm {
+		display: block;
+	}
+}
+@media (max-width: 959px) and (min-width: 767px)  {
+	.wrap {
+		width: 768px;
+	}
+	br.md {
+		display: block;
+	}
+	.content__left__h1 {
+		font-size: 24px;
+	}
+	.content__left__trucks {
+		padding: 25px 0px 35px;
+	}
+	.truck__price {
+		padding-bottom: 15px;
+	}
+	.content__left__trucks > div img {
+		height: 85px;
+		width: auto;
+	}
+	.content__left__descr {
+		width: 350px;
+	}
+	.content__left__descr p {
+		font-size: 13px;
+	}
+
+}
